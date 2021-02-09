@@ -1,3 +1,5 @@
+/* Prints out cube of a given number */
+
 #include <stdio.h>
 #include <stdlib.h>
 

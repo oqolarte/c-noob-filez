@@ -1,3 +1,7 @@
+/* Source code for determining whether a number is an Armstrong Number.*/
+
+/* Compile with -lm to avoid the pow() err */
+
 #include <stdio.h>
 #include <math.h>
 

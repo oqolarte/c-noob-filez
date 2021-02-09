@@ -1,7 +1,9 @@
+/* Remember to link the math library using -lm when compiling */
+
 #include <stdio.h>
 #include <math.h>
 
-int main(){
+int main() {
     float height = 0;
     float weight = 0;
     float bmi = 0;

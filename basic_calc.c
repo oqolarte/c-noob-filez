@@ -1,9 +1,4 @@
-/*
- * basic_calc.c
- * 
- * 
- * 
- */
+/* Prints out sum, difference, product, and quotient of two input numbers */
 
 
 #include <stdio.h>

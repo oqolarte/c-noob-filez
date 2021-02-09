@@ -1,3 +1,5 @@
+/* Returns the nth fibonacci number, n being the user-input number */
+
 #include <stdio.h>
 #include <stdlib.h>
 

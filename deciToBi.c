@@ -1,4 +1,4 @@
-/* This program converts the decimal input to binary output
+/* Converts the decimal input to binary output
  * without needing arithmetic operation.
  */
 
@@ -7,8 +7,7 @@
 #define CHAR_BITS 8 /* size of character */
 #define INT_BITS (sizeof(int) * CHAR_BITS)
 
-int main()
-{
+int main() {
 	int num, index, i;
 	int bin[INT_BITS] = {0};
 
