@@ -3,7 +3,6 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-        int n, steps = 0;
         if (argc != 2) {
                 printf("Usage: ./collatz INTEGER\n");
                 return -1;
@@ -15,12 +14,10 @@ int main(int argc, char *argv[]) {
                 return -1;
         }
 
+        int steps = 0;
         while (n != 1) {
-                if (n % 2 == 0) {
-                        n /= 2;
-                } else {
-                        n = n * 3 + 1;
-                }
+                if (n % 2 == 0) {n /= 2;} 
+                else {n = n * 3 + 1;}
                 steps++;
         }
 
