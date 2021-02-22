@@ -1,11 +1,9 @@
 /* Prints out sum, difference, product, and quotient of two input numbers */
 
-
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
-{
+int main() {
 	double num1;
 	double num2;
 	printf("Enter first number (A): ");

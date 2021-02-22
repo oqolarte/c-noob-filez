@@ -4,6 +4,8 @@ Here lies the practice files re: my better understanding C.
 
 Some of it are legit mini-projects, some are exercises from different C programming books and courses all over the internet.
 
+None of which are really polished for practical purposes, I think.
+
 ## Why C?
 
 I like the idea of creating a software that's "closer" to the hardware, and C might just be the programming language for that.
