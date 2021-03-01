@@ -1,3 +1,8 @@
+/* Build your own text editor
+ * from 
+ * https://viewsourcecode.org/snaptoken/kilo 
+ */
+
 /* includes */
 
 #include <ctype.h>
