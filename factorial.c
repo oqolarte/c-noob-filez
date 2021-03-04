@@ -23,7 +23,6 @@ int factorial(int n) {
                 f *= i;
 
         return f;
-
 }
 
 int main() {
