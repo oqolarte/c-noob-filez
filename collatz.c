@@ -24,3 +24,4 @@ int main(int argc, char *argv[]) {
         printf("As per Collatz Conjecture, %d steps are needed to get to n = 1.\n", steps);
         return 0;
 }
+
