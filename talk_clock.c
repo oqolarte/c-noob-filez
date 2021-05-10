@@ -12,7 +12,7 @@ char * get_minute_name(int min);
 char * get_hour_name(int hrs);
 
 int main(void){
-    while(true){
+    while(1) {
         int hours = -1, minutes = -1;
         scanf("%d:%d", &hours, &minutes);
 
@@ -57,11 +57,10 @@ char * get_minute_name(int min){
     } else {
         result = min_str;
     }
-
     return result;
 }
 
-/**
+/*
  * 0 =< num < 60
  */
 char * num_to_string(int num){
@@ -89,6 +88,5 @@ char * num_to_string(int num){
             free(digit);
         }
     }
-
     return result;
 }
