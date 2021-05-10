@@ -12,16 +12,22 @@ int main(){
         printf("Enter second number: ");
         scanf("%lf", &num2);
 
-        if(op == '+'){
-                printf("Result: %f\n", num1 + num2);
-        } else if(op == '-'){
-                printf("Result: %f\n", num1 - num2);
-        } else if(op == '*'){
-                printf("Result: %f\n", num1 * num2);
-        } else if(op == '/'){
-                printf("Result: %f\n", num1 / num2);
-        } else {
-                printf("Invalid operator\n");
+        switch(op) {
+                case '+':
+                        printf("Result: %f\n", num1 + num2);
+                        break;
+                case '-':
+                        printf("Result: %f\n", num1 - num2);
+                        break;
+                case '*':
+                        printf("Result: %f\n", num1 * num2);
+                        break;
+                case '/':
+                        printf("Result: %f\n", num1 / num2);
+                        break;
+                default:
+                        printf("Invalid operator\n");
+                        break;
         }
         return 0;
 }
