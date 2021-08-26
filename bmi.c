@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+int main(void) {
     float height = 0;
     float weight = 0;
     float bmi = 0;

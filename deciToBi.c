@@ -1,4 +1,5 @@
-/* Converts the decimal input to binary output
+/*
+ * Converts the decimal input to binary output
  * without needing arithmetic operation.
  */
 

@@ -1,14 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
+
+#define FACTOR1 3
+#define FACTOR2 5
+#define RANGE 100
 
 int main(){
     int i;
-    for(i = 0; i <= 1000; i++){
-        if(i % 3 == 0 && i % 5 == 0){
+    for(i = 1; i <= RANGE ; i++){
+        if(i % FACTOR1 == 0 && i % FACTOR2 == 0){
             printf("Fizzbuzz!\n");
-        } else if(i % 3 == 0){
+        } else if(i % FACTOR1 == 0){
             printf("Fizz!\n");
-        } else if(i % 5 == 0){
+        } else if(i % FACTOR2 == 0){
             printf("Buzz!\n");
         } else {
             printf("%d\n", i);

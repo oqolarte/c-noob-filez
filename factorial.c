@@ -25,7 +25,7 @@ int factorial(int n) {
         return f;
 }
 
-int main() {
+int main(void) {
         int x;
         printf("Input a number: ");
         scanf("%d", &x);

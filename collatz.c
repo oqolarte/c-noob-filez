@@ -4,13 +4,13 @@
 
 int main(int argc, char *argv[]) {
         if (argc != 2) {
-                printf("Usage: ./collatz INTEGER\n");
+                printf("Invalid number of arguments. Requires only one integer (n > 1) as argument.\n");
                 return -1;
         }
 
-        int n = atoi(argv[1]);
+        unsigned long n = atoi(argv[1]);
         if (n <= 1) {
-                printf("Error: should be n > 1\n");
+                printf("Math error. Use n > 1.\n");
                 return -1;
         }
 
@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
                 steps++;
         }
 
-        printf("As per Collatz Conjecture, %d steps are needed to get to n = 1.\n", steps);
+        printf("Per Collatz Conjecture, %d steps to get to n = 1.\n", steps);
         return 0;
 }
 

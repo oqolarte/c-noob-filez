@@ -4,7 +4,7 @@
 int main(){
 
     FILE * fpointer = fopen("employees.txt", "a");
-    
+
     fprintf(fpointer, "Kelly, Customer Service\n");
 
     fclose(fpointer);
