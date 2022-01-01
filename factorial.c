@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <limits.h>
 
 /* factorial not defined for negative integers */
@@ -12,7 +13,7 @@ int factorial(int n) {
 
         /* Correct recursive factorial implementation without stack
          * overflows. Returns zero on any error. */
-        if (n < FACTORIAL_MIN || n > FACTORIAL_MAX) return 0; 
+        if (n < FACTORIAL_MIN || n > FACTORIAL_MAX) return 0;
 
         /* Invalid loop bounds has now become a special case. Since
          * it's already covered by input validation, the line below
@@ -25,11 +26,14 @@ int factorial(int n) {
         return f;
 }
 
-int main(void) {
-        int x;
-        printf("Input a number: ");
-        scanf("%d", &x);
-        printf("The factorial of %d is %d\n.", x, factorial(x));
+int main(int argc, char *argv[]) {
+        if (argc != 2) {
+                printf("Usage: ./factorial NUMBER");
+                return 1;
+        }
+
+        int x = atoi(argv[1]);
+        printf("The factorial of %d is %d.\n", x, factorial(x));
 
         return 0;
 }

@@ -13,6 +13,7 @@ int main (int argc, char *argv[]) {
                 return 1;
         }
 
+        /* converts argument to a double */
         double nnn = atof(argv[1]);
         printf("Answer: %f\n", cube(nnn));
         return 0;
